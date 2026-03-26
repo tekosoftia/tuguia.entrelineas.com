@@ -1,0 +1,5 @@
+{
+  "name": "Luna: Tu Guía Segura",
+  "description": "Aplicación educativa y de acompañamiento para niñas que inician su ciclo menstrual, con recordatorios inteligentes de higiene y apoyo emocional.",
+  "requestFramePermissions": ["notifications"]
+}
