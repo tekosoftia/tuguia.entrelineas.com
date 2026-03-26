@@ -7,6 +7,10 @@ export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
     plugins: [react(), tailwindcss()],
+    // Hostinger (preset Express) suele validar la carpeta `build`; Vite por defecto usa `dist`.
+    build: {
+      outDir: 'build',
+    },
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
